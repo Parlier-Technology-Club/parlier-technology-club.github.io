@@ -1,0 +1,33 @@
+---
+import Header from "../components/required/Header.astro";
+import Footer from "../components/required/Footer.astro";
+
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/nvigneux/Helldivers-2-Stratagems-icons-svg/master/Orbital%20Cannons/Orbital%20380MM%20HE%20Barrage.svg"
+      type="image/svg"
+    />
+    <title>Parlier Tech Club | {title}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div>!!! Website under construction, lmao</div>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

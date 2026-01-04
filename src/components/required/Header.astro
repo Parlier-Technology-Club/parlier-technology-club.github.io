@@ -1,0 +1,44 @@
+<header>
+  <h1>Parlier Technology Club</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/hack-club">Hack Club Resources</a>
+    <a
+      href="https://drive.google.com/drive/folders/1tnFwInVOjISdJ2ZJaMkbVohb1Jwci-YZ?usp=sharing"
+      >Club Documents</a
+    >
+    <a href="/blog">Blog</a>
+  </nav>
+</header>
+
+<style lang="less">
+  @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+  header {
+    background-color: rgb(30, 49, 196);
+    color: white;
+    font-family: "Orbitron";
+
+    display: grid;
+
+    grid-template-rows: 2fr 1.5fr;
+    align-items: center;
+    height: 8em;
+
+    padding-left: 2em;
+  }
+  h1 {
+    margin: 0;
+  }
+  nav {
+    padding: 5px;
+    background-color: rgb(0, 10, 148);
+    a {
+      padding-right: 2em;
+      color: rgb(196, 248, 255);
+      &:active {
+        color: rgb(110, 185, 255);
+      }
+    }
+  }
+</style>
